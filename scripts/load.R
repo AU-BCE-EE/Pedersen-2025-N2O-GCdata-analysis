@@ -55,7 +55,7 @@ dh <- as.data.table(dh)
 
 ## Volume and area of chambers
 # average height within each chamber
-dh[, vol.m3 := 0.75^2 * 0.4 + 0.74^2 * (avg.height / 100)] # m3
+dh[, vol.m3 := 0.75^2 * 0.2 + 0.75^2 * 0.4 + 0.74^2 * (avg.height / 100)] # m3
 dh[, vol.L := vol.m3 * 10^3] # L
 dh[, area := 0.74 * 0.74] # m2
 
